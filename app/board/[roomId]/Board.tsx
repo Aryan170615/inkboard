@@ -14,7 +14,7 @@ import PropertiesPanel from "@/components/PropertiesPanel";
 import TopBar from "@/components/TopBar";
 import Cursors from "@/components/Cursors";
 import ChatPanel from "@/components/ChatPanel";
-import AIDrawPanel from "@/components/AIDrawPanel";
+import AIDrawPanel from "@/components/AiDrawPanel";
 import BgPicker, { BG_OPTIONS, type BgOption } from "@/components/BgPicker";
 import { createRoughCanvas, drawShape, measureText } from "@/lib/rough-draw";
 import { newId, isPointNearShape, boundsOf } from "@/lib/utils";
