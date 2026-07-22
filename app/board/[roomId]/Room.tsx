@@ -12,7 +12,7 @@ export default function Room({ roomId, children }: { roomId: string; children: R
     <RoomProvider
       id={roomId}
       initialPresence={{ cursor: null, name: identity.name, color: identity.color }}
-      initialStorage={{ shapes: new LiveMap() }}
+      initialStorage={{ shapes: new LiveMap() as any}}
     >
       {children}
     </RoomProvider>

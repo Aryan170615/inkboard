@@ -15,7 +15,7 @@ export type Presence = {
 };
 
 export type Storage = {
-  shapes: LiveMap<string, Shape>;
+  shapes: LiveMap<string, any>;
 };
 
 // Broadcast events are ephemeral (not stored) — perfect for chat messages

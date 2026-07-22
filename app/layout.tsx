@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, Caveat } from "next/font/google";
-import "./globals.css";
+// @ts-ignore 
+import "@/app/globals.css"; 
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
