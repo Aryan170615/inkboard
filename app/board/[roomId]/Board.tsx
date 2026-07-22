@@ -94,7 +94,7 @@ export default function Board({ roomId }: { roomId: string }) {
   useEffect(() => { bgRef.current = bg; }, [bg]);
 
   // ── Liveblocks ─────────────────────────────────────────────────────────────
-  const shapesMap = useStorage((root) => root.shapes);
+  const shapesMap = useStorage((root: any) => root.shapes);
   const shapes: Shape[] = shapesMap ? Array.from(shapesMap.values()) : [];
   const updateMyPresence = useUpdateMyPresence();
 
@@ -333,7 +333,7 @@ export default function Board({ roomId }: { roomId: string }) {
 
     const id = newId();
     const base: Shape = {
-      id, type: tool as ToolType, x, y, width: 0, height: 0,
+      id, type: tool as Shape["type"], x, y, width: 0, height: 0,
       stroke: style.stroke, fill: style.fill, fillStyle: style.fillStyle,
       strokeWidth: style.strokeWidth, roughness: style.roughness,
       opacity: style.opacity, fontSize: style.fontSize,
